@@ -4,6 +4,9 @@ import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
 import { Introduction } from "../components/Introduction";
 import { Faq } from "../components/Faq";
+import { Tokenomics } from "../components/Tokenomics";
+import { Roadmap } from "../components/Roadmap";
+
 
 export const HomePage = () => {
   return (
@@ -16,6 +19,8 @@ export const HomePage = () => {
       >
         <Hero />
         <Introduction/>
+        <Tokenomics/>
+        <Roadmap/>
         <Faq/>
         <Footer />
       </Flex>

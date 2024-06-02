@@ -42,9 +42,7 @@ export const Herooo = () => {
         backgroundRepeat={"no-repeat"}
         backgroundSize={"cover"}
         opacity={0.6}
-      ></Box>
-      {/* Above Footer */}
-      
+      ></Box>  
     </Flex>
   );
 };
