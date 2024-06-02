@@ -1,5 +1,7 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import FaqImg from "../assets/Faq.png";
 import {
   Accordion,
@@ -8,7 +10,12 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
+
 export const Faq = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000, delay: 400 });
+  }, []);
+
   return (
     <>
       {/* LargeScreen View */}
@@ -24,9 +31,23 @@ export const Faq = () => {
           pl={"87px"}
           pr={"100px"}
           justify={"space-between"}
+          alignItems={"start"}
           w="100%"
         >
-          <Image src={FaqImg} objectFit={"contain"} w={"503px"} mt={"45px"} />
+          <Image
+            src={FaqImg}
+            objectFit={"contain"}
+            w={"503px"}
+            mt={"45px"}
+            data-aos="zoom-in-right"
+            css={{
+              transition: "transform 0.3s ease",
+              ":hover": {
+                transform: "scale(1.05)",
+                cursor: "pointer",
+              },
+            }}
+          />
           <Box width={"640px"}>
             <Flex
               flexDirection={"column"}
@@ -245,7 +266,18 @@ export const Faq = () => {
           >
             FAQ
           </Text>
-          <Image src={FaqImg}  w={"395px"} />
+          <Image
+            src={FaqImg}
+            w={"395px"}
+            data-aos="zoom-in-right"
+            css={{
+              transition: "transform 0.3s ease",
+              ":hover": {
+                transform: "scale(1.05)",
+                cursor: "pointer",
+              },
+            }}
+          />
           <Box width={"356px"}>
             <Flex
               flexDirection={"column"}

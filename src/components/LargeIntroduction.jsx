@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import IntroImg from "../assets/Intro.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 export const LargeIntroduction = () => {
   const [isHovered, setIsHovered] = useState(false);
+  useEffect(() => {
+    Aos.init({ duration: 3000, delay: 400 });
+  }, []);
   return (
     <Box bgColor={"#0a0a0a"} width={"100%"}>
       <Flex
@@ -47,8 +52,8 @@ export const LargeIntroduction = () => {
             their love to the blockchain. Save the lucky ones alive, join us to
             save the future!
             <br />
-            Our mission is to empower everyone to share wealth and succeed. read
-            more...
+            Our mission is to empower everyone to share wealth and succeed.
+            <br />
             <span style={{ color: "#9b9999" }}>read more...</span>
           </Text>
 
@@ -73,7 +78,7 @@ export const LargeIntroduction = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-           <Text>Documents &nbsp;</Text>
+            <Text>Documents &nbsp;</Text>
             <Box as="span">
               {isHovered ? (
                 <ChevronUpIcon fontSize={"22px"} />
@@ -85,7 +90,19 @@ export const LargeIntroduction = () => {
         </Flex>
 
         <Box p={5} boxSizing="border-box">
-          <Image src={IntroImg} w={"100%"} objectFit="cover" />
+          <Image
+            src={IntroImg}
+            w={"100%"}
+            objectFit="cover"
+            data-aos="zoom-in-right"
+            css={{
+              transition: "transform 0.3s ease",
+              ":hover": {
+                transform: "scale(1.05)",
+                cursor: "pointer",
+              },
+            }}
+          />
         </Box>
       </Flex>
     </Box>

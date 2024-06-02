@@ -35,6 +35,7 @@ export const Footer = () => {
           objectFit="cover"
           alt="SaviourLogo"
           objectPosition={"60% -15%"}
+          _hover={{ cursor: "pointer"}}
         />
         <Text
           fontFamily={"Poppins"}
@@ -42,6 +43,7 @@ export const Footer = () => {
           fontWeight={700}
           background="linear-gradient(92.23deg, #FF002A 5.2%, #720005 90.93%)"
           bgClip="text"
+          _hover={{ cursor: "pointer"}}
         >
           SITEMAP
         </Text>
@@ -60,6 +62,7 @@ export const Footer = () => {
               fontWeight={600}
               fontFamily="Poppins"
               color="white"
+              _hover={{ cursor: "pointer", color: "#ED0137" }}
             >
               {item}
             </Text>
@@ -71,8 +74,9 @@ export const Footer = () => {
           h={"27px"}
           justifyContent={"space-between"}
           mt={{ base: "34px", md: "10px" }}
+          _hover={{ cursor: "pointer"}}
         >
-          <FaTwitter />
+          <FaTwitter  />
           <FaTelegramPlane />
           <IoMdMail />
         </Flex>

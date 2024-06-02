@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import IntroImg from "../assets/Intro.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const BaseIntroduction = () => {
   const [isHovered, setIsHovered] = useState(false);
+  useEffect(() => {
+    Aos.init({ duration: 3000, delay: 400 });
+  }, []);
   return (
     <Box bgColor={"#0a0a0a"} width={"100%"}>
       <Flex
@@ -26,7 +31,19 @@ const BaseIntroduction = () => {
             Introduction
           </Text>
 
-          <Image src={IntroImg} w={"100%"} objectFit="cover" />
+          <Image
+            src={IntroImg}
+            w={"100%"}
+            objectFit="cover"
+            data-aos="zoom-in-right"
+            css={{
+              transition: "transform 0.3s ease",
+              ":hover": {
+                transform: "scale(1.05)",
+                cursor: "pointer",
+              },
+            }}
+          />
 
           <Text
             fontFamily={"ZCOOL KuaiLe"}
@@ -42,8 +59,8 @@ const BaseIntroduction = () => {
             their love to the blockchain. Save the lucky ones alive, join us to
             save the future!
             <br />
-            Our mission is to empower everyone to share wealth and succeed. read
-            more...
+            Our mission is to empower everyone to share wealth and succeed.
+            <br />
             <span style={{ color: "#9b9999" }}>read more...</span>
           </Text>
 

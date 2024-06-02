@@ -45,7 +45,7 @@ const Tokenomics = () => {
           left="0"
           w="100%"
           height={{ base: "798px", md: "706px" }}
-          bg="rgba(0, 0, 0, 0.75)" 
+          bg="rgba(0, 0, 0, 0.9)" 
           zIndex="1"
         />
         <Box position="relative" zIndex="2" pt={20}>
