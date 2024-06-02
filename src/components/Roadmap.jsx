@@ -47,7 +47,7 @@ export const Roadmap = () => {
   return (
     <Box
       w="100%"
-      h="100vh"
+      h={["80vh","100vh"]}
       position="relative"
       backgroundImage={RoadmapBg}
       backgroundPosition="center"

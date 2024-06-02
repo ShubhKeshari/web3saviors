@@ -64,7 +64,7 @@ export const Faq = () => {
               >
                 FAQ
               </Text>
-              <Accordion w={"100%"} border={"none"}>
+              <Accordion w={"100%"} border={"none"} defaultIndex={[3]}>
                 <AccordionItem
                   border={"1px solid #ED0137"}
                   borderRadius={"20px"}
@@ -285,7 +285,7 @@ export const Faq = () => {
               justifyContent={"space-between"}
               h="100%"
             >
-              <Accordion w={"100%"} border={"none"}>
+              <Accordion w={"100%"} border={"none"} defaultIndex={[3]}>
                 <AccordionItem
                   border={"1px solid #ED0137"}
                   borderRadius={"11px"}
