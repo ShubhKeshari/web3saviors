@@ -91,6 +91,7 @@ npm run dev
 ## Application Snapshots
 
 ![Screenshot 2024-06-02 140206](https://github.com/ShubhKeshari/web3saviors/assets/114546254/e7a1974e-9e41-4a99-af56-966f8c7117ff)
+![Screenshot 2024-06-02 142227](https://github.com/ShubhKeshari/web3saviors/assets/114546254/e7804581-abfe-49b4-8a76-1aa2aee2f5fd)
 ![Screenshot 2024-06-02 140226](https://github.com/ShubhKeshari/web3saviors/assets/114546254/085f1470-8c8d-47d2-8487-886526222129)
 ![Screenshot 2024-06-02 140240](https://github.com/ShubhKeshari/web3saviors/assets/114546254/4a8feb84-a1b0-4ecb-897b-b01307fb848b)
 ![Screenshot 2024-06-02 140300](https://github.com/ShubhKeshari/web3saviors/assets/114546254/f2b223ec-d3cb-4efc-8d2b-ca78f7d88ddb)
@@ -103,7 +104,7 @@ List and provide a brief overview of the technologies used in the project.
 
 - React.js
 - Chakra-UI
-- AOS
+- AOS library
 - Web3Modal-Wagmi
 - Other libraries/modules
 
