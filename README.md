@@ -88,6 +88,14 @@ To start Application
 npm run dev
 
 ```
+## Application Snapshots
+
+![Screenshot 2024-06-02 140206](https://github.com/ShubhKeshari/web3saviors/assets/114546254/e7a1974e-9e41-4a99-af56-966f8c7117ff)
+![Screenshot 2024-06-02 140226](https://github.com/ShubhKeshari/web3saviors/assets/114546254/085f1470-8c8d-47d2-8487-886526222129)
+![Screenshot 2024-06-02 140240](https://github.com/ShubhKeshari/web3saviors/assets/114546254/4a8feb84-a1b0-4ecb-897b-b01307fb848b)
+![Screenshot 2024-06-02 140300](https://github.com/ShubhKeshari/web3saviors/assets/114546254/f2b223ec-d3cb-4efc-8d2b-ca78f7d88ddb)
+![Screenshot 2024-06-02 140326](https://github.com/ShubhKeshari/web3saviors/assets/114546254/b6f8cb13-c282-458e-bf2b-570bd4f292a9)
+![Screenshot 2024-06-02 140339](https://github.com/ShubhKeshari/web3saviors/assets/114546254/d99bc6fd-79ea-4de3-aa95-31bc05945f89)
 
 ## Technology Stack
 
