@@ -6,7 +6,7 @@ import { Introduction } from "../components/Introduction";
 import { Faq } from "../components/Faq";
 import { Tokenomics } from "../components/Tokenomics";
 import { Roadmap } from "../components/Roadmap";
-
+import { Event } from "../components/Event";
 
 export const HomePage = () => {
   return (
@@ -19,6 +19,7 @@ export const HomePage = () => {
       >
         <Hero />
         <Introduction/>
+        <Event/>
         <Tokenomics/>
         <Roadmap/>
         <Faq/>
